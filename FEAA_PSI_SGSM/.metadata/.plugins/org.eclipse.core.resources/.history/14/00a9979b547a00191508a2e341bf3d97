@@ -1,0 +1,51 @@
+package ro.uaic.feaa.psi.sgsm.model.repository;
+
+import java.util.List;
+
+import ro.uaic.feaa.psi.metamodel.TransactionManagement;
+import ro.uaic.feaa.psi.sgsm.model.entities.BunMaterial;
+import ro.uaic.feaa.psi.sgsm.model.entities.Furnizor;
+import ro.uaic.feaa.psi.sgsm.model.entities.Gestiune;
+import ro.uaic.feaa.psi.sgsm.model.entities.Localitate;
+
+/**
+ * Defineste operatii CRUD pentru majoritatea claselor-satelit din modelul nostru.
+ * Exemple: Furnizor, Localitate, BunMaterial, Gestiune
+ * @author cretuli
+ *
+ */
+public interface MasterRepository extends TransactionManagement{
+	
+	//metodele de tip Create trebuie sa returneze clientului noua versiune a obiectului dupa insertul in BD 
+	public Localitate addLocalitate(Localitate localitate);
+	public Furnizor addFurnizor(Furnizor furnizor);
+	public BunMaterial addBunMaterial(BunMaterial bunMaterial);
+	public Gestiune addGestiune(Gestiune gestiune);
+	
+	//metodele de tip Update trebuie sa returneze clientului noua versiune a obiectului dupa update-ul in BD
+	public Localitate updateLocalitate(Localitate localitate);
+	public Furnizor updateFurnizor(Furnizor furnizor);
+	public BunMaterial updateBunMaterial(BunMaterial bunMaterial);
+	public Gestiune updateGestiune(Gestiune gestiune);
+	
+	public void deleteLocalitate(Localitate localitate);
+	public void deleteFurnizor(Furnizor furnizor);
+	public void deleteBunMaterial(BunMaterial bunMaterial);
+	public void deleteGestiune(Gestiune gestiune);
+	
+	public List<Localitate> findLocalitatiAll();
+	public List<Furnizor> findFurnizoriAll();
+	public List<BunMaterial> findBunuriMaterialeAll();
+	public List<Gestiune> findGestiuniAll();
+	
+	
+	public Localitate findLocalitateById(Long id);
+	public Furnizor findFurnizorById(Long id);
+	public BunMaterial findBunuriMaterialById(Long id);
+	public Gestiune findGestiuneById(Long id);
+	/**
+	 * Extrage date doar din tabela Furnizor, fara relatia ManyToOne Localitate
+	 * @return
+	 */
+	public List<Furnizor> findFurnizoriAllLight();
+}
