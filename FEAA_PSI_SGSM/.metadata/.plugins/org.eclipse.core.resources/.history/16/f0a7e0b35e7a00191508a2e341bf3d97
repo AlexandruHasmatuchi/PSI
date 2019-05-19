@@ -24,8 +24,6 @@ public class TestAngajati {
 		Assert.assertTrue(angajati.size()>0);
 	}
 
-	
-	//metoda generare angajati
 	private static void addAngajati() {
 		repo.beginTransaction();
 		for (int i = 1; i < 10; i++) {
