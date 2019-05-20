@@ -1,0 +1,13 @@
+package ro.uaic.feaa.psi.sgsm.model.entities;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.UniqueConstraint;
+
+import ro.uaic.feaa.psi.metamodel.AbstractEntity;
+
+@Entity
+public class CerereDemisie extends AbstractEntity{
+
+	
+}

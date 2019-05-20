@@ -11,7 +11,6 @@ import ro.uaic.feaa.psi.metamodel.AbstractRepository;
 import ro.uaic.feaa.psi.sgsm.model.entities.ActAditional;
 import ro.uaic.feaa.psi.sgsm.model.entities.Angajat;
 import ro.uaic.feaa.psi.sgsm.model.entities.BunMaterial;
-import ro.uaic.feaa.psi.sgsm.model.entities.CerereDemisie;
 import ro.uaic.feaa.psi.sgsm.model.entities.Contract;
 import ro.uaic.feaa.psi.sgsm.model.entities.Furnizor;
 import ro.uaic.feaa.psi.sgsm.model.entities.Gestiune;
@@ -239,36 +238,6 @@ public class MasterRepositoryDefault extends AbstractRepository implements
 
 	@Override
 	public ActAditional findActAditionalById(Long id) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public CerereDemisie addCerereDemisie(CerereDemisie cerereDemisie) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public CerereDemisie updateCerereDemisie(CerereDemisie cerereDemisie) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public void deleteCerereDemisie(CerereDemisie cerereDemisie) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public List<CerereDemisie> findCerereDemisieAll() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public CerereDemisie findCerereDemisieById(Long id) {
 		// TODO Auto-generated method stub
 		return null;
 	}

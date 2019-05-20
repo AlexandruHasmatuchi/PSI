@@ -6,7 +6,6 @@ import ro.uaic.feaa.psi.metamodel.TransactionManagement;
 import ro.uaic.feaa.psi.sgsm.model.entities.Angajat;
 import ro.uaic.feaa.psi.sgsm.model.entities.ActAditional;
 import ro.uaic.feaa.psi.sgsm.model.entities.Contract;
-import ro.uaic.feaa.psi.sgsm.model.entities.CerereDemisie;
 import ro.uaic.feaa.psi.sgsm.model.entities.BunMaterial;
 import ro.uaic.feaa.psi.sgsm.model.entities.Furnizor;
 import ro.uaic.feaa.psi.sgsm.model.entities.Gestiune;
@@ -30,7 +29,6 @@ public interface MasterRepository extends TransactionManagement{
 	public Angajat addAngajat(Angajat angajat);
 	public Contract addContract(Contract contract);
 	public ActAditional addActAditional(ActAditional actAditional);
-	public CerereDemisie addCerereDemisie(CerereDemisie cerereDemisie);
     
 	
 	//metodele de tip Update trebuie sa returneze clientului noua versiune a obiectului dupa update-ul in BD
@@ -43,7 +41,6 @@ public interface MasterRepository extends TransactionManagement{
 	public Angajat updateAngajat(Angajat angajat);
 	public Contract updateContract(Contract contract);
 	public ActAditional updateActAditional(ActAditional actAditional);
-	public CerereDemisie updateCerereDemisie(CerereDemisie cerereDemisie);
     
 	
 	
@@ -56,7 +53,6 @@ public interface MasterRepository extends TransactionManagement{
 	public void deleteAngajat(Angajat angajat);
 	public void deleteContract(Contract contract);
 	public void deleteActAditional(ActAditional actAditional);
-	public void deleteCerereDemisie(CerereDemisie cerereDemisie);
     
 	
 	public List<Localitate> findLocalitatiAll();
@@ -68,7 +64,6 @@ public interface MasterRepository extends TransactionManagement{
 	public List<Angajat> findAngajatiAll();
 	public List<Contract> findContractAll();
 	public List<ActAditional> findActAditionalAll();
-	public List<CerereDemisie> findCerereDemisieAll();
     
 	
 	
@@ -82,7 +77,6 @@ public interface MasterRepository extends TransactionManagement{
 	public Angajat findAngajatById(Long id);
 	public Contract findContractById(Long id);
 	public ActAditional findActAditionalById(Long id);
-	public CerereDemisie findCerereDemisieById(Long id);
     
 	
 	

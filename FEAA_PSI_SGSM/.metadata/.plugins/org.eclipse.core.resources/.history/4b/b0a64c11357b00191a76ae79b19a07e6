@@ -1,0 +1,51 @@
+package ro.uaic.feaa.psi.sgsm.model.entities;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.UniqueConstraint;
+
+import ro.uaic.feaa.psi.metamodel.AbstractEntity;
+
+@Entity
+public class CerereDemisie extends AbstractEntity{
+	String CodCerere;
+	String Angajat;
+	String Motiv;
+	String DataCerere;
+	String Status;
+	
+	public String getCodCerere() {
+		return CodCerere;
+	}
+	public void setCodCerere(String codCerere) {
+		CodCerere = codCerere;
+	}
+	public String getAngajat() {
+		return Angajat;
+	}
+	public void setAngajat(String angajat) {
+		Angajat = angajat;
+	}
+	public String getMotiv() {
+		return Motiv;
+	}
+	public void setMotiv(String motiv) {
+		Motiv = motiv;
+	}
+	public String getDataCerere() {
+		return DataCerere;
+	}
+	public void setDataCerere(String dataCerere) {
+		DataCerere = dataCerere;
+	}
+	public String getStatus() {
+		return Status;
+	}
+	public void setStatus(String status) {
+		Status = status;
+	}
+	
+	
+	
+
+}
