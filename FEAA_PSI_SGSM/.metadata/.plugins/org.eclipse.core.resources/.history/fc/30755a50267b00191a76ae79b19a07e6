@@ -19,7 +19,7 @@ public class Angajat extends AbstractEntity{
 	String Adresa;
 	String Marca;
 	String ManagerSef;
-	String Departament ;
+	String Departament;
 	
 
 	public String getAdresa() {
