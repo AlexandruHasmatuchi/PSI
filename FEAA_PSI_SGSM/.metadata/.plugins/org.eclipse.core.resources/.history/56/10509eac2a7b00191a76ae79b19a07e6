@@ -1,0 +1,50 @@
+package ro.uaic.feaa.psi.sgsm.test.repository;
+
+import java.util.List;
+
+import junit.framework.Assert;
+
+import ro.uaic.feaa.psi.sgsm.model.entities.ActAditional;
+import ro.uaic.feaa.psi.sgsm.model.repository.MasterRepository;
+import ro.uaic.feaa.psi.sgsm.model.repository.MasterRepositoryDefault;
+
+public class TestactAditionale {
+
+	static MasterRepository repo = new MasterRepositoryDefault();
+
+	public static void main(String[] args) {
+		List<ActAditional> acteAditionale = repo.findActeAditionaleAll();
+		//daca nu sunt actAditionale introducem cateva date de test
+		if (acteAditionale.size() == 0) {
+			addActAditionale();
+			acteAditionale = repo.findActeAditionaleAll();
+		}
+		//verificam daca sunt date de test (ar trebui sa existe, la acest moment)
+		Assert.assertTrue(acteAditionale.size()>0);
+	}
+
+	
+	//metoda generare actAditionale
+	private static void addActAditionale() {
+		repo.beginTransaction();
+		for (int i = 1; i < 10; i++) {
+			ActAditional actAditional = new ActAditional();
+			
+			actAditional.setIdPersoana(i);
+			actAditional.setAdresa("Adresa " + i);
+			actAditional.setCNP("1234567890123");
+			actAditional.setDataNastere("24/03/1990");
+			actAditional.setEmail("adresa" + i + "@email.com");
+			actAditional.setNume("Nume " + i);
+			actAditional.setPrenume("Prenume " + i);
+			actAditional.setTelefon("123456789");
+			actAditional.setMarca("1234");
+			actAditional.setManagerSef("54321");
+			actAditional.setDepartament("Cercetare si dezvoltare");
+			
+			repo.addActAditional(actAditional);
+
+		}
+		repo.commitTransaction();
+	}
+}

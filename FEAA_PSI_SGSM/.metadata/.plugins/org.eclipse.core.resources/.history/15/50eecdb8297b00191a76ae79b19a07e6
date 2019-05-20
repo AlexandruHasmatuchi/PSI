@@ -1,0 +1,19 @@
+package ro.uaic.feaa.psi.sgsm.model.entities;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.UniqueConstraint;
+
+import ro.uaic.feaa.psi.metamodel.AbstractEntity;
+
+@Entity
+public class ActAditional extends AbstractEntity{
+	String NumarActAditional
+	String Serie
+	String DataIncheiere
+	String FunctieNoua
+	String SalariuNou
+	String NrContract
+	
+	
+}

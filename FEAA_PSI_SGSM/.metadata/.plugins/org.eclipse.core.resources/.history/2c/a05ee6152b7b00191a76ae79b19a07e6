@@ -1,0 +1,58 @@
+package ro.uaic.feaa.psi.sgsm.model.entities;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.UniqueConstraint;
+
+import ro.uaic.feaa.psi.metamodel.AbstractEntity;
+
+@Entity
+public class ActAditional extends AbstractEntity{
+
+	String NumarActAditional;
+	String Serie;
+	String DataIncheiere;
+	String FunctieNoua;
+	Integer SalariuNou;
+	String NrContract;
+	
+	public String getNumarActAditional() {
+		return NumarActAditional;
+	}
+	public void setNumarActAditional(String numarActAditional) {
+		NumarActAditional = numarActAditional;
+	}
+	public String getSerie() {
+		return Serie;
+	}
+	public void setSerie(String serie) {
+		Serie = serie;
+	}
+	public String getDataIncheiere() {
+		return DataIncheiere;
+	}
+	public void setDataIncheiere(String dataIncheiere) {
+		DataIncheiere = dataIncheiere;
+	}
+	public String getFunctieNoua() {
+		return FunctieNoua;
+	}
+	public void setFunctieNoua(String functieNoua) {
+		FunctieNoua = functieNoua;
+	}
+	public String getSalariuNou() {
+		return SalariuNou;
+	}
+	public void setSalariuNou(String salariuNou) {
+		SalariuNou = salariuNou;
+	}
+	public String getNrContract() {
+		return NrContract;
+	}
+	public void setNrContract(String nrContract) {
+		NrContract = nrContract;
+	}
+	
+	
+	
+}

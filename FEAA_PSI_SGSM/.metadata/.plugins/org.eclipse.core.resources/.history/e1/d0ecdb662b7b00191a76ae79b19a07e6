@@ -8,7 +8,6 @@ import javax.persistence.Persistence;
 import javax.persistence.PersistenceContext;
 
 import ro.uaic.feaa.psi.metamodel.AbstractRepository;
-import ro.uaic.feaa.psi.sgsm.model.entities.ActAditional;
 import ro.uaic.feaa.psi.sgsm.model.entities.Angajat;
 import ro.uaic.feaa.psi.sgsm.model.entities.BunMaterial;
 import ro.uaic.feaa.psi.sgsm.model.entities.Contract;
@@ -208,36 +207,6 @@ public class MasterRepositoryDefault extends AbstractRepository implements
 
 	@Override
 	public Contract findContractById(Long id) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public ActAditional addActAditional(ActAditional actAditional) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public ActAditional updateActAditional(ActAditional actAditional) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public void deleteActAditional(ActAditional actAditional) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public List<ActAditional> findActAditionalAll() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public ActAditional findActAditionalById(Long id) {
 		// TODO Auto-generated method stub
 		return null;
 	}

@@ -1,0 +1,45 @@
+package ro.uaic.feaa.psi.sgsm.test.repository;
+
+import java.util.List;
+
+import junit.framework.Assert;
+
+import ro.uaic.feaa.psi.sgsm.model.entities.ActAditional;
+import ro.uaic.feaa.psi.sgsm.model.repository.MasterRepository;
+import ro.uaic.feaa.psi.sgsm.model.repository.MasterRepositoryDefault;
+
+public class TestActAditional {
+
+	static MasterRepository repo = new MasterRepositoryDefault();
+
+	public static void main(String[] args) {
+		List<ActAditional> acteAditionale = repo.findActAditionalAll();
+		//daca nu sunt actAditionale introducem cateva date de test
+		if (acteAditionale.size() == 0) {
+			addActAditionale();
+			acteAditionale = repo.findActAditionalAll();
+		}
+		//verificam daca sunt date de test (ar trebui sa existe, la acest moment)
+		Assert.assertTrue(acteAditionale.size()>0);
+	}
+
+	
+	//metoda generare actAditionale
+	private static void addActAditionale() {
+		repo.beginTransaction();
+		for (int i = 1; i < 10; i++) {
+			ActAditional actAditional = new ActAditional();
+			
+			actAditional.setNumarActAditional("1234");
+			actAditional.setSerie("3");
+			actAditional.setDataIncheiere("03/12/2020");
+			actAditional.setFunctieNoua("Team Lead");
+			actAditional.setSalariuNou(i * 125 );
+			actAditional.setNrContract("12");
+			
+			repo.addActAditional(actAditional);
+
+		}
+		repo.commitTransaction();
+	}
+}
