@@ -33,13 +33,15 @@ public class TestAngajati {
 			
 			angajat.setIdPersoana(i);
 			angajat.setAdresa("Adresa " + i);
-			
 			angajat.setCNP("1234567890123");
 			angajat.setDataNastere("24/03/1990");
 			angajat.setEmail("adresa" + i + "@email.com");
 			angajat.setNume("Nume " + i);
 			angajat.setPrenume("Prenume " + i);
 			angajat.setTelefon("123456789");
+			angajat.setMarca("1234");
+			angajat.setManagerSef("54321");
+			angajat.setDepartament("Cercetare si dezvoltare");
 			
 			repo.addAngajat(angajat);
 

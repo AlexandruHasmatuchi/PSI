@@ -17,6 +17,9 @@ public class Angajat extends AbstractEntity{
 	String CNP;
 	String DataNastere;
 	String Adresa;
+	String Marca;
+	String ManagerSef;
+	String Departament;
 	
 
 	public String getAdresa() {
@@ -34,6 +37,24 @@ public class Angajat extends AbstractEntity{
 	}
 	public String getNume() {
 		return Nume;
+	}
+	public String getMarca() {
+		return Marca;
+	}
+	public void setMarca(String marca) {
+		Marca = marca;
+	}
+	public String getManagerSef() {
+		return ManagerSef;
+	}
+	public void setManagerSef(String managerSef) {
+		ManagerSef = managerSef;
+	}
+	public String getDepartament() {
+		return Departament;
+	}
+	public void setDepartament(String departament) {
+		Departament = departament;
 	}
 	public void setNume(String nume) {
 		Nume = nume;

@@ -4,6 +4,7 @@ import java.util.List;
 
 import ro.uaic.feaa.psi.metamodel.TransactionManagement;
 import ro.uaic.feaa.psi.sgsm.model.entities.Angajat;
+import ro.uaic.feaa.psi.sgsm.model.entities.Contract;
 import ro.uaic.feaa.psi.sgsm.model.entities.BunMaterial;
 import ro.uaic.feaa.psi.sgsm.model.entities.Furnizor;
 import ro.uaic.feaa.psi.sgsm.model.entities.Gestiune;
@@ -25,6 +26,8 @@ public interface MasterRepository extends TransactionManagement{
 	
 	//NOI -------------------------
 	public Angajat addAngajat(Angajat angajat);
+	public Contract addContract(Contract contract);
+    
 	
 	//metodele de tip Update trebuie sa returneze clientului noua versiune a obiectului dupa update-ul in BD
 	public Localitate updateLocalitate(Localitate localitate);
@@ -34,6 +37,8 @@ public interface MasterRepository extends TransactionManagement{
 	
 	//NOI -------------------------
 	public Angajat updateAngajat(Angajat angajat);
+	public Contract updateContract(Contract contract);
+    
 	
 	
 	public void deleteLocalitate(Localitate localitate);
@@ -43,6 +48,8 @@ public interface MasterRepository extends TransactionManagement{
 	
 	//NOI -------------------------
 	public void deleteAngajat(Angajat angajat);
+	public void deleteContract(Contract contract);
+    
 	
 	public List<Localitate> findLocalitatiAll();
 	public List<Furnizor> findFurnizoriAll();
@@ -51,6 +58,8 @@ public interface MasterRepository extends TransactionManagement{
 	
 	//NOI -------------------------
 	public List<Angajat> findAngajatiAll();
+	public List<Contract> findContractAll();
+    
 	
 	
 	
@@ -61,6 +70,8 @@ public interface MasterRepository extends TransactionManagement{
 	
 	//NOI -------------------------
 	public Angajat findAngajatById(Long id);
+	public Contract findContractById(Long id);
+    
 	
 	
 	/**

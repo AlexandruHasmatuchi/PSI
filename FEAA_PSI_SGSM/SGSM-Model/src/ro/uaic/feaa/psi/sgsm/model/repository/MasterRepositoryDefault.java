@@ -10,6 +10,7 @@ import javax.persistence.PersistenceContext;
 import ro.uaic.feaa.psi.metamodel.AbstractRepository;
 import ro.uaic.feaa.psi.sgsm.model.entities.Angajat;
 import ro.uaic.feaa.psi.sgsm.model.entities.BunMaterial;
+import ro.uaic.feaa.psi.sgsm.model.entities.Contract;
 import ro.uaic.feaa.psi.sgsm.model.entities.Furnizor;
 import ro.uaic.feaa.psi.sgsm.model.entities.Gestiune;
 import ro.uaic.feaa.psi.sgsm.model.entities.Localitate;
@@ -176,6 +177,36 @@ public class MasterRepositoryDefault extends AbstractRepository implements
 
 	@Override
 	public Angajat findAngajatById(Long id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Contract addContract(Contract contract) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Contract updateContract(Contract contract) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void deleteContract(Contract contract) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public List<Contract> findContractAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Contract findContractById(Long id) {
 		// TODO Auto-generated method stub
 		return null;
 	}

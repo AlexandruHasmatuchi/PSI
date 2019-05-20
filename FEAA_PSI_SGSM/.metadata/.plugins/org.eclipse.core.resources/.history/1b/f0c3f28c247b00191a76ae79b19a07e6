@@ -1,0 +1,22 @@
+package ro.uaic.feaa.psi.sgsm.model.entities;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.UniqueConstraint;
+
+import ro.uaic.feaa.psi.metamodel.AbstractEntity;
+
+@Entity
+public class Contract extends AbstractEntity{
+	String NrContract;
+	String Serie;
+	String DataIncheiere;
+	String DataInceput;
+	String DataSfarsit;
+	Integer Salariu;
+	String Post ;
+	Integer NumarZileConcediu;
+	String Status;
+	String Marca;
+
+}

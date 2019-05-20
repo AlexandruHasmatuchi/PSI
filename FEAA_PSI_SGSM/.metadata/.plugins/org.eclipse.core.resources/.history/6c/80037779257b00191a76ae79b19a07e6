@@ -8,6 +8,7 @@ import javax.persistence.Persistence;
 import javax.persistence.PersistenceContext;
 
 import ro.uaic.feaa.psi.metamodel.AbstractRepository;
+import ro.uaic.feaa.psi.sgsm.model.entities.Angajat;
 import ro.uaic.feaa.psi.sgsm.model.entities.BunMaterial;
 import ro.uaic.feaa.psi.sgsm.model.entities.Furnizor;
 import ro.uaic.feaa.psi.sgsm.model.entities.Gestiune;
@@ -146,6 +147,35 @@ public class MasterRepositoryDefault extends AbstractRepository implements
 
 	@Override
 	public Localitate updateLocalitate(Localitate localitate) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Angajat addAngajat(Angajat angajat) {		
+		return (Angajat)this.create(angajat);
+	}
+
+	@Override
+	public Angajat updateAngajat(Angajat angajat) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void deleteAngajat(Angajat angajat) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public List<Angajat> findAngajatiAll() {
+		return this.getEm().createQuery("Select a from Angajat a")
+				.getResultList();
+	}
+
+	@Override
+	public Angajat findAngajatById(Long id) {
 		// TODO Auto-generated method stub
 		return null;
 	}
