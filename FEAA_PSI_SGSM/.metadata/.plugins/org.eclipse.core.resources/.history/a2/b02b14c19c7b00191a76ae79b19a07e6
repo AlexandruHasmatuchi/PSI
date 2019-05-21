@@ -1,0 +1,39 @@
+package ro.uaic.feaa.psi.sgsm.test.repository;
+
+import java.util.List;
+
+import junit.framework.Assert;
+
+import ro.uaic.feaa.psi.sgsm.model.entities.Angajat;
+import ro.uaic.feaa.psi.sgsm.model.entities.Certificare;
+import ro.uaic.feaa.psi.sgsm.model.repository.MasterRepository;
+import ro.uaic.feaa.psi.sgsm.model.repository.MasterRepositoryDefault;
+
+public class TestCertificare {
+
+	static MasterRepository repo = new MasterRepositoryDefault();
+
+	public static void main(String[] args) {
+		List<Certificare> Certificare = repo.findCertificareAll();
+		//daca nu sunt Certificare introducem cateva date de test
+		if (Certificare.size() == 0) {
+			addCertificare();
+			Certificare = repo.findCertificareAll();
+		}
+		//verificam daca sunt date de test (ar trebui sa existe, la acest moment)
+		Assert.assertTrue(Certificare.size()>0);
+	}
+
+	
+	//metoda generare Certificare
+	private static void addCertificare() {
+		repo.beginTransaction();
+		for (int i = 1; i < 10; i++) {
+			Certificare Certificare = new Certificare();
+			
+			repo.addCertificare(Certificare);
+
+		}
+		repo.commitTransaction();
+	}
+}

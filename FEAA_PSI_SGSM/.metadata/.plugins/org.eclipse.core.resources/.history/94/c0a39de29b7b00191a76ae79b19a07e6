@@ -12,7 +12,6 @@ import ro.uaic.feaa.psi.sgsm.model.entities.ActAditional;
 import ro.uaic.feaa.psi.sgsm.model.entities.Angajat;
 import ro.uaic.feaa.psi.sgsm.model.entities.BunMaterial;
 import ro.uaic.feaa.psi.sgsm.model.entities.CerereDemisie;
-import ro.uaic.feaa.psi.sgsm.model.entities.Certificare;
 import ro.uaic.feaa.psi.sgsm.model.entities.Contract;
 import ro.uaic.feaa.psi.sgsm.model.entities.Furnizor;
 import ro.uaic.feaa.psi.sgsm.model.entities.Gestiune;
@@ -270,36 +269,6 @@ public class MasterRepositoryDefault extends AbstractRepository implements
 
 	@Override
 	public CerereDemisie findCerereDemisieById(Long id) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public Certificare addCertificare(Certificare certificare) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public Certificare updateCertificare(Certificare certificare) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public void deleteCertificare(Certificare certificare) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public List<Certificare> findCertificareAll() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public Certificare findCertificareById(Long id) {
 		// TODO Auto-generated method stub
 		return null;
 	}

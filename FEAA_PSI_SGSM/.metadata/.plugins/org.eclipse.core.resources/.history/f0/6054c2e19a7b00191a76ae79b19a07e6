@@ -1,0 +1,20 @@
+package ro.uaic.feaa.psi.sgsm.model.entities;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.UniqueConstraint;
+
+import ro.uaic.feaa.psi.metamodel.AbstractEntity;
+
+@Entity
+public class Certificare extends AbstractEntity{
+
+	String IdCertificare;
+	String Serie;
+	String Denumire;
+	String Institutie;
+	String Angajat;
+
+	
+	
+}

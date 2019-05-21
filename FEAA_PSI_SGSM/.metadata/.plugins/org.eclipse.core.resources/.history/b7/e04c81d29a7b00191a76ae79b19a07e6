@@ -1,0 +1,5 @@
+package ro.uaic.feaa.psi.sgsm.model.entities;
+
+public class Certificare {
+
+}

@@ -1,0 +1,85 @@
+package ro.uaic.feaa.psi.sgsm.model.entities;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.UniqueConstraint;
+
+import ro.uaic.feaa.psi.metamodel.AbstractEntity;
+import ro.uaic.feaa.psi.sgsm.model.entities.Angajat;
+
+@Entity
+public class Certificare extends AbstractEntity{
+
+	private Integer IdCertificare;
+	private Integer Serie;
+	private String Denumire;
+	private String Institutie;
+	private Angajat Angajat;
+	
+	
+	public Certificare(Integer idCertificare, Integer serie, String denumire, String institutie,
+			Angajat angajat) {
+		
+		super();
+		IdCertificare = idCertificare;
+		Serie = serie;
+		Denumire = denumire;
+		Institutie = institutie;
+		Angajat = angajat;
+	}
+
+
+	public Integer getIdCertificare() {
+		return IdCertificare;
+	}
+
+
+	public void setIdCertificare(Integer idCertificare) {
+		IdCertificare = idCertificare;
+	}
+
+
+	public Integer getSerie() {
+		return Serie;
+	}
+
+
+	public void setSerie(Integer serie) {
+		Serie = serie;
+	}
+
+
+	public String getDenumire() {
+		return Denumire;
+	}
+
+
+	public void setDenumire(String denumire) {
+		Denumire = denumire;
+	}
+
+
+	public String getInstitutie() {
+		return Institutie;
+	}
+
+
+	public void setInstitutie(String institutie) {
+		Institutie = institutie;
+	}
+
+
+	public Angajat getAngajat() {
+		return Angajat;
+	}
+
+
+	public void setAngajat(Angajat angajat) {
+		Angajat = angajat;
+	}
+	
+	
+	
+	
+	
+}
