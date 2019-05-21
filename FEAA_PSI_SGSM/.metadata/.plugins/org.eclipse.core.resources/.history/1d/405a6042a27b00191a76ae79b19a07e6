@@ -11,7 +11,6 @@ import ro.uaic.feaa.psi.metamodel.AbstractRepository;
 import ro.uaic.feaa.psi.sgsm.model.entities.ActAditional;
 import ro.uaic.feaa.psi.sgsm.model.entities.Angajat;
 import ro.uaic.feaa.psi.sgsm.model.entities.BunMaterial;
-import ro.uaic.feaa.psi.sgsm.model.entities.CerereConcediu;
 import ro.uaic.feaa.psi.sgsm.model.entities.CerereDemisie;
 import ro.uaic.feaa.psi.sgsm.model.entities.Certificare;
 import ro.uaic.feaa.psi.sgsm.model.entities.Contract;
@@ -301,36 +300,6 @@ public class MasterRepositoryDefault extends AbstractRepository implements
 
 	@Override
 	public Certificare findCertificareById(Long id) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public CerereConcediu addCerereConcediu(CerereConcediu cerereConcediu) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public CerereConcediu updateCerereConcediu(CerereConcediu cerereConcediu) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public void deleteCerereConcediu(CerereConcediu cerereConcediu) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public List<CerereConcediu> findCerereConcediuAll() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public CerereConcediu findCerereConcediuById(Long id) {
 		// TODO Auto-generated method stub
 		return null;
 	}

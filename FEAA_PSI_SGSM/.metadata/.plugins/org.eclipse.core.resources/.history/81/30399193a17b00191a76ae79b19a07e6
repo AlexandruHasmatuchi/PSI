@@ -1,0 +1,22 @@
+package ro.uaic.feaa.psi.sgsm.model.entities;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.UniqueConstraint;
+
+import ro.uaic.feaa.psi.metamodel.AbstractEntity;
+import ro.uaic.feaa.psi.sgsm.model.entities.Angajat;
+
+@Entity
+public class CerereConcediu extends AbstractEntity{
+	
+	private String codCerere;
+	private String motiv;
+	private Angajat angajat;
+	private String documentDoveditor;
+	private String tipConcediu;
+	private String dataInceput;
+	private String dataSfarsit;
+
+	
+}

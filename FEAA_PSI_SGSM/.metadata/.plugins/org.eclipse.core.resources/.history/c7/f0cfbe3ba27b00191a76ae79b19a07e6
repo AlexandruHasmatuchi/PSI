@@ -7,7 +7,6 @@ import ro.uaic.feaa.psi.sgsm.model.entities.Angajat;
 import ro.uaic.feaa.psi.sgsm.model.entities.ActAditional;
 import ro.uaic.feaa.psi.sgsm.model.entities.Contract;
 import ro.uaic.feaa.psi.sgsm.model.entities.CerereDemisie;
-import ro.uaic.feaa.psi.sgsm.model.entities.CerereConcediu;
 import ro.uaic.feaa.psi.sgsm.model.entities.Certificare;
 import ro.uaic.feaa.psi.sgsm.model.entities.BunMaterial;
 import ro.uaic.feaa.psi.sgsm.model.entities.Furnizor;
@@ -34,7 +33,6 @@ public interface MasterRepository extends TransactionManagement{
 	public ActAditional addActAditional(ActAditional actAditional);
 	public CerereDemisie addCerereDemisie(CerereDemisie cerereDemisie);
 	public Certificare addCertificare(Certificare certificare);
-	public CerereConcediu addCerereConcediu(CerereConcediu cerereConcediu);
     
 	
 	//metodele de tip Update trebuie sa returneze clientului noua versiune a obiectului dupa update-ul in BD
@@ -49,7 +47,6 @@ public interface MasterRepository extends TransactionManagement{
 	public ActAditional updateActAditional(ActAditional actAditional);
 	public CerereDemisie updateCerereDemisie(CerereDemisie cerereDemisie);
 	public Certificare updateCertificare(Certificare certificare);
-	public CerereConcediu updateCerereConcediu(CerereConcediu cerereConcediu);
     
 	
 	
@@ -64,7 +61,6 @@ public interface MasterRepository extends TransactionManagement{
 	public void deleteActAditional(ActAditional actAditional);
 	public void deleteCerereDemisie(CerereDemisie cerereDemisie);
 	public void deleteCertificare(Certificare certificare);
-	public void deleteCerereConcediu(CerereConcediu cerereConcediu);
     
 	
 	public List<Localitate> findLocalitatiAll();
@@ -78,7 +74,6 @@ public interface MasterRepository extends TransactionManagement{
 	public List<ActAditional> findActAditionalAll();
 	public List<CerereDemisie> findCerereDemisieAll();
 	public List<Certificare> findCertificareAll();
-	public List<CerereConcediu> findCerereConcediuAll();
     
 	
 	
@@ -94,7 +89,6 @@ public interface MasterRepository extends TransactionManagement{
 	public ActAditional findActAditionalById(Long id);
 	public CerereDemisie findCerereDemisieById(Long id);
 	public Certificare findCertificareById(Long id);
-	public CerereConcediu findCerereConcediuById(Long id);
     
 	
 	
