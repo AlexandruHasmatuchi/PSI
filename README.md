@@ -20,10 +20,10 @@ TODO:
   - Contract
   - Angajat
   
-✅ Clase entitati  
-✅ Teste entitati   
-✅ Metode adaugate in MasterRepository   
-✅ Metode supraincarcate in MasterRepositoryDefault   
+✅ Creare Clase entitati  
+✅ Creare Teste entitati   
+✅ Adaugare metode CRUD in MasterRepository pentru toate entitatile
+✅ Supraincarcare metode in MasterRepositoryDefault
 ✅ Populare metode cu logica interogare SQL   
 
 ----------------------------------------------------
