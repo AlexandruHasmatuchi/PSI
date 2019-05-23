@@ -181,9 +181,8 @@ public class MasterRepositoryDefault extends AbstractRepository implements
 
 	@Override
 	public Angajat findAngajatById(Long id) {
-		return (Angajat) this.getEm().createQuery(
-				"Select a from Angajat a where id=:id").setParameter("id", id)
-				.getSingleResult();
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 	@Override
@@ -206,15 +205,14 @@ public class MasterRepositoryDefault extends AbstractRepository implements
 
 	@Override
 	public List<Contract> findContractAll() {
-		return this.getEm().createQuery("Select b from Contract b")
-				.getResultList();
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 	@Override
 	public Contract findContractById(Long id) {
-		return (Contract) this.getEm().createQuery(
-				"Select a from Angajat a where id=:id").setParameter("id", id)
-				.getSingleResult();
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 	@Override
@@ -237,15 +235,14 @@ public class MasterRepositoryDefault extends AbstractRepository implements
 
 	@Override
 	public List<ActAditional> findActAditionalAll() {
-		return this.getEm().createQuery("Select b from ActAditional b")
-				.getResultList();
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 	@Override
 	public ActAditional findActAditionalById(Long id) {
-		return (ActAditional) this.getEm().createQuery(
-				"Select a from ActAditional a where id=:id").setParameter("id", id)
-				.getSingleResult();
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 	@Override
@@ -268,15 +265,14 @@ public class MasterRepositoryDefault extends AbstractRepository implements
 
 	@Override
 	public List<CerereDemisie> findCerereDemisieAll() {
-		return this.getEm().createQuery("Select b from CerereDemisie b")
-				.getResultList();
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 	@Override
 	public CerereDemisie findCerereDemisieById(Long id) {
-		return (CerereDemisie) this.getEm().createQuery(
-				"Select a from CerereDemisie a where id=:id").setParameter("id", id)
-				.getSingleResult();
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 	@Override
@@ -299,15 +295,14 @@ public class MasterRepositoryDefault extends AbstractRepository implements
 
 	@Override
 	public List<Certificare> findCertificareAll() {
-		return this.getEm().createQuery("Select b from Certificare b")
-				.getResultList();
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 	@Override
 	public Certificare findCertificareById(Long id) {
-		return (Certificare) this.getEm().createQuery(
-				"Select a from Certificare a where id=:id").setParameter("id", id)
-				.getSingleResult();
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 	@Override
@@ -330,15 +325,14 @@ public class MasterRepositoryDefault extends AbstractRepository implements
 
 	@Override
 	public List<CerereConcediu> findCerereConcediuAll() {
-		return this.getEm().createQuery("Select b from CerereConcediu b")
-				.getResultList();
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 	@Override
 	public CerereConcediu findCerereConcediuById(Long id) {
-		return (CerereConcediu) this.getEm().createQuery(
-				"Select a from CerereConcediu a where id=:id").setParameter("id", id)
-				.getSingleResult();
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 	

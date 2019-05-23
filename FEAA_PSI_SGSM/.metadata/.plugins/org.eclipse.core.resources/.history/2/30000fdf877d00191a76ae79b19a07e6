@@ -212,7 +212,7 @@ public class MasterRepositoryDefault extends AbstractRepository implements
 
 	@Override
 	public Contract findContractById(Long id) {
-		return (Contract) this.getEm().createQuery(
+		return (Angajat) this.getEm().createQuery(
 				"Select a from Angajat a where id=:id").setParameter("id", id)
 				.getSingleResult();
 	}
