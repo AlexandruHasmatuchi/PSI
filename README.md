@@ -24,7 +24,7 @@ TODO:
 ✅ Teste entitati   
 ✅ Metode adaugate in MasterRepository   
 ✅ Metode supraincarcate in MasterRepositoryDefault   
-❌ Populare metode cu logica interogare SQL   
+✅ Populare metode cu logica interogare SQL   
 
 ----------------------------------------------------
 1 Formular complex:
