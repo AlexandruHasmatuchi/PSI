@@ -22,9 +22,9 @@ TODO:
   
 ✅ Creare Clase entitati  
 ✅ Creare Teste entitati   
-✅ Adaugare metode CRUD in MasterRepository pentru toate entitatile 
-✅ Supraincarcare metode in MasterRepositoryDefault 
-✅ Populare metode cu logica interogare SQL   
+✅ Adaugare metode CRUD in MasterRepository pentru toate entitatile  
+✅ Supraincarcare metode in MasterRepositoryDefault  
+✅ Populare metode cu logica interogare SQL    
 
 ----------------------------------------------------
 1 Formular complex:
