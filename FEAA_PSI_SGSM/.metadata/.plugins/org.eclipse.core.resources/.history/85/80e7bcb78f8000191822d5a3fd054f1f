@@ -1,0 +1,41 @@
+package ro.uaic.feaa.psi.sgsm.forms;
+
+import java.util.List;
+
+import ro.uaic.feaa.psi.sgsm.model.entities.Angajat;
+import ro.uaic.feaa.psi.sgsm.model.repository.DocumentRepository;
+import ro.uaic.feaa.psi.sgsm.model.repository.DocumentRepositoryDefault;
+import ro.uaic.feaa.psi.sgsm.model.repository.MasterRepository;
+import ro.uaic.feaa.psi.sgsm.model.repository.MasterRepositoryDefault;
+
+public class AngajatiFormData {
+	private MasterRepository masterRepo = new MasterRepositoryDefault();
+	private DocumentRepository docRepo = new DocumentRepositoryDefault();
+
+	
+	private List<Angajat> listaAngajati;
+
+	
+	public List<Angajat> getListaAngajati() {
+		if (this.listaAngajati == null) 
+		{
+			this.listaAngajati = this.masterRepo.findAngajatiAll();
+		}
+		return listaAngajati;
+	}
+
+	public void setListaAngajati(List<Angajat> listaAngajati) {
+		this.listaAngajati = listaAngajati;
+	}
+
+
+	public MasterRepository getMasterRepo() {
+		return masterRepo;
+	}
+
+	public void setMasterRepo(MasterRepository masterRepo) {
+		this.masterRepo = masterRepo;
+	}
+
+
+}
