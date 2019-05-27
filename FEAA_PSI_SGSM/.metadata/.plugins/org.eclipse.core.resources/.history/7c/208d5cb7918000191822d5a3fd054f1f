@@ -34,9 +34,14 @@ public class AngajatiFormData {
 		this.masterRepo = masterRepo;
 	}
 
+	public Object getDocRepo() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 
-	public Angajat getAngajatCurent() {
-		return this.currentAngajat;
+	public Object getAngajatCurent() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 	public void setCurrentAngajat(Angajat angajatNou) {

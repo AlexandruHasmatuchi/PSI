@@ -22,6 +22,9 @@ public class AngajatiForm {
 		this.formData.setCurrentAngajat(AngajatNou);
 	}
 	
+	
+
+	
 	public void salveazaModificariDocument() {
 		this.getFormData().getMasterRepo().beginTransaction();
 		this.getFormData().getMasterRepo().addAngajat(this.getFormData().getAngajatCurent());

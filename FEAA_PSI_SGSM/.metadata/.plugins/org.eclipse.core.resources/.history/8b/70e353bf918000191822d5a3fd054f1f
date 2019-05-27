@@ -6,7 +6,7 @@ import ro.uaic.feaa.psi.sgsm.model.entities.Angajat;
 import ro.uaic.feaa.psi.sgsm.model.repository.MasterRepository;
 import ro.uaic.feaa.psi.sgsm.model.repository.MasterRepositoryDefault;
 
-public class AngajatiFormData {
+public class AngajatiForm {
 	private MasterRepository masterRepo = new MasterRepositoryDefault();
 
 	private List<Angajat> listaAngajati;
@@ -34,9 +34,14 @@ public class AngajatiFormData {
 		this.masterRepo = masterRepo;
 	}
 
+	public Object getDocRepo() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 
-	public Angajat getAngajatCurent() {
-		return this.currentAngajat;
+	public Object getAngajatCurent() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 	public void setCurrentAngajat(Angajat angajatNou) {

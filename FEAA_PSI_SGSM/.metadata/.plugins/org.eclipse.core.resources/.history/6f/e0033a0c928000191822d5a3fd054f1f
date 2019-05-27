@@ -1,6 +1,9 @@
 package ro.uaic.feaa.psi.sgsm.forms;
 
 import ro.uaic.feaa.psi.sgsm.model.entities.Angajat;
+import ro.uaic.feaa.psi.sgsm.model.entities.DocInsotitor;
+import ro.uaic.feaa.psi.sgsm.model.entities.LinieDocument;
+import ro.uaic.feaa.psi.sgsm.model.entities.Receptie;
 
 
 public class AngajatiForm {
@@ -22,9 +25,12 @@ public class AngajatiForm {
 		this.formData.setCurrentAngajat(AngajatNou);
 	}
 	
+	
+
+	
 	public void salveazaModificariDocument() {
 		this.getFormData().getMasterRepo().beginTransaction();
-		this.getFormData().getMasterRepo().addAngajat(this.getFormData().getAngajatCurent());
+		this.getFormData().getMasterRepo().addAngajat((Angajat) this.getFormData().getAngajatCurent());
 		this.getFormData().getMasterRepo().commitTransaction();
 
 	}
