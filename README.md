@@ -33,5 +33,5 @@ Deschizi in eclipse proiectul
 - GestiuneAngajatiFormData
 
 ✅ Clase formular  
-(/) Teste formular  
+✅ Teste formular  
 ✅ Logica formular
